@@ -6,9 +6,11 @@ Animation view to highlight a particular goals for Android
 <img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-4259888620.gif" width="150" height=150 />
 
 
+`minSdkVersion=11`
+
 # Usage
 
-**add this line to Gradle**
+**add this line to** `build.gradle`
 
 ```gradle
 
