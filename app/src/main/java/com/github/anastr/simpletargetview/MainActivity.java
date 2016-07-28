@@ -9,7 +9,7 @@ import com.github.anastr.targetviewlib.TargetView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TargetView mTargetView;
+    TargetView mTargetView, mTargetView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mTargetView.stopAnimation();
+            }
+        });
+
+        mTargetView3 = (TargetView) findViewById(R.id.mTargetView3);
+        Button onOffButton = (Button) findViewById(R.id.on_off_button);
+        assert onOffButton != null;
+        onOffButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mTargetView3.isAnimationRunning())
+                    mTargetView3.stopAnimation();
+                else
+                    mTargetView3.startAnimation();
             }
         });
     }
