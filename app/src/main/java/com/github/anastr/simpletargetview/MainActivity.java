@@ -46,5 +46,6 @@ public class MainActivity extends AppCompatActivity {
                     mTargetView3.startAnimation();
             }
         });
+
     }
 }
