@@ -15,6 +15,11 @@ import android.widget.RelativeLayout;
 import com.github.anastr.targetviewlib.targets.Target1;
 import com.github.anastr.targetviewlib.targets.Target2;
 import com.github.anastr.targetviewlib.targets.Target3;
+import com.github.anastr.targetviewlib.targets.Target4;
+import com.github.anastr.targetviewlib.targets.Target5;
+import com.github.anastr.targetviewlib.targets.Target6;
+import com.github.anastr.targetviewlib.targets.Target7;
+import com.github.anastr.targetviewlib.targets.Target8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,12 +31,11 @@ public class TargetView extends RelativeLayout {
 
     private com.github.anastr.targetviewlib.Target target;
     private BackgroundEffect backgroundEffect;
-    private int targetColor , rotateDuration;
-    /** Width of the Target line , in Pixel*/
-    private int targetWidth ;
-    private int targetMode = 1;
-
+    private int rotateDuration;
+    private int targetColor, targetMode = 1;
+    float targetWidth;
     private boolean withBackgroundEffect;
+
     private int backgroundEffectColor, backgroundEffectDuration;
 
     private AnimatorSet animatorSet;
@@ -65,9 +69,9 @@ public class TargetView extends RelativeLayout {
 
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.TargetView, 0, 0);
 
-        targetColor  = a.getColor(R.styleable.TargetView_targetColor, Color.BLACK);
+        targetColor = a.getColor(R.styleable.TargetView_targetColor, Color.BLACK);
         rotateDuration = a.getInt(R.styleable.TargetView_rotateDuration, 2000);
-        targetWidth = a.getInt(R.styleable.TargetView_targetWidth, 10);
+        targetWidth = a.getFloat(R.styleable.TargetView_targetWidth, 10);
         targetMode = a.getInt(R.styleable.TargetView_targetMode, 1);
         withBackgroundEffect = a.getBoolean(R.styleable.TargetView_withBackgroundEffect, true);
         backgroundEffectColor = a.getColor(R.styleable.TargetView_backgroundEffectColor, Color.CYAN);
@@ -77,25 +81,8 @@ public class TargetView extends RelativeLayout {
         animatorSet = new AnimatorSet();
         animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
 
-        Target.Builder builder = new Target.Builder().setTargetWidth(targetWidth).setColor(targetColor);
-        switch (targetMode) {
-            case 1:{
-                target = new Target1(getContext(), builder);
-                break;
-            }
-            case 2:{
-                target = new Target2(getContext(), builder);
-                break;
-            }
-            case 3:{
-                target = new Target3(getContext(), builder);
-                break;
-            }
-            default :{
-                target = new Target1(getContext(), builder);
-                break;
-            }
-        }
+        initializeTarget();
+
         LayoutParams targetParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         targetParams.addRule(CENTER_IN_PARENT, TRUE);
         if(withBackgroundEffect){
@@ -129,8 +116,46 @@ public class TargetView extends RelativeLayout {
         animationRunning = true;
     }
 
-    public boolean isAnimationRunning(){
-        return animationRunning;
+    private void initializeTarget() {
+        Target.Builder builder = new Target.Builder().setTargetWidth(targetWidth).setColor(targetColor);
+        switch (targetMode) {
+            case 1:{
+                target = new Target1(getContext(), builder);
+                break;
+            }
+            case 2:{
+                target = new Target2(getContext(), builder);
+                break;
+            }
+            case 3:{
+                target = new Target3(getContext(), builder);
+                break;
+            }
+            case 4:{
+                target = new Target4(getContext(), builder);
+                break;
+            }
+            case 5:{
+                target = new Target5(getContext(), builder);
+                break;
+            }
+            case 6:{
+                target = new Target6(getContext(), builder);
+                break;
+            }
+            case 7:{
+                target = new Target7(getContext(), builder);
+                break;
+            }
+            case 8:{
+                target = new Target8(getContext(), builder);
+                break;
+            }
+            default :{
+                target = new Target1(getContext(), builder);
+                break;
+            }
+        }
     }
 
     public void startAnimation(){
@@ -147,6 +172,28 @@ public class TargetView extends RelativeLayout {
         }
     }
 
+    public void setTargetColor(int targetColor) {
+        this.targetColor = targetColor;
+        target.setTargetColor(targetColor);
+        target.invalidate();
+    }
+
+    public void setTargetWidth(float targetWidth) {
+        this.targetWidth = targetWidth;
+        target.setTargetWidth(targetWidth);
+        target.invalidate();
+    }
+
+    public void setBackgroundEffectColor(int backgroundEffectColor) {
+        this.backgroundEffectColor = backgroundEffectColor;
+        backgroundEffect.setColor(backgroundEffectColor);
+        backgroundEffect.invalidate();
+    }
+
+    public boolean isAnimationRunning(){
+        return animationRunning;
+    }
+
     public int getRotateDuration() {
         return rotateDuration;
     }
@@ -155,7 +202,7 @@ public class TargetView extends RelativeLayout {
         return targetColor;
     }
 
-    public int getTargetWidth() {
+    public float getTargetWidth() {
         return targetWidth;
     }
 }

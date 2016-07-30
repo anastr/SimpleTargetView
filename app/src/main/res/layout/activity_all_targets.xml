@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context="com.github.anastr.simpletargetview.AllTargetsActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                app:backgroundEffectColor="#aa3fff1e"
+                app:targetColor="#6b75ff"
+                app:targetMode="Target1"
+                app:targetWidth="10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target1"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view2"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                app:backgroundEffectColor="#c11effe8"
+                app:targetColor="#ff6bfd"
+                app:targetMode="Target2"
+                app:targetWidth="10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target2"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view3"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                app:backgroundEffectColor="#c6f8ff1e"
+                app:targetColor="#ff706b"
+                app:targetMode="Target3"
+                app:targetWidth="100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target3"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view4"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                app:backgroundEffectColor="#8dff1e1e"
+                app:targetColor="#45df16"
+                app:targetMode="Target4"
+                app:targetWidth="5" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target4"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view5"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                app:backgroundEffectColor="#aa1e31ff"
+                app:targetColor="#d91507"
+                app:targetMode="Target5"
+                app:targetWidth="10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target5"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view6"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                app:backgroundEffectColor="#8e871eff"
+                app:targetColor="#1b27f9"
+                app:targetMode="Target6"
+                app:targetWidth="7" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target6"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view7"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                app:backgroundEffectColor="#831eff5e"
+                app:targetColor="#d16319"
+                app:targetMode="Target7"
+                app:targetWidth="12" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target7"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+
+            <com.github.anastr.targetviewlib.TargetView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/view8"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                app:backgroundEffectColor="#95000000"
+                app:targetColor="#9d1bf9"
+                app:targetMode="Target8"
+                app:targetWidth="10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Target8"/>
+
+            </com.github.anastr.targetviewlib.TargetView>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

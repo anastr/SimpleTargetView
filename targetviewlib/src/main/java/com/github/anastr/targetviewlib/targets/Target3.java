@@ -7,40 +7,41 @@ import android.graphics.RectF;
 
 import com.github.anastr.targetviewlib.Target;
 
-/**
- * Created by my pc on 7/26/2016.
- */
-public class Target3 extends Target {
 
-    private float indicatorHeight;
+public class Target3 extends Target {
 
     public Target3(Context context, Target.Builder builder) {
         super(context, builder);
+        init();
     }
+
+    private void init() {
+        paint = new Paint();
+        indicator = new RectF();
+
+        paint.setAntiAlias(true);
+    }
+
+    private Paint paint;
+    private RectF indicator;
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        indicatorHeight = getWidth()/(2f + (getWidth()/100 +1) );
+        /** Arc indicator */
+        float indicatorHeight = getWidth() / (2f + (getWidth() / 100 + 1));
 
-        Paint paint = new Paint();
-        paint.setColor(color);
-        paint.setAntiAlias(true);
+        paint.setColor(targetColor);
+
         // indicator Top
-        RectF indicator = new RectF(getWidth()/2f - (targetWidth/2f), getTop()
-                , getWidth()/2f + (targetWidth/2f), getTop() + (indicatorHeight*2));
-        canvas.drawArc (indicator, -70f, -40f, true, paint);
+        indicator.set(getWidth()/2f - (targetWidth/2f), getTop()
+                , getWidth()/2f + (targetWidth/2f), getTop() + (indicatorHeight *2f));
         // indicator Right
-        indicator.set(getRight() - (indicatorHeight*2), getHeight()/2f - (targetWidth/2f)
-                , getRight() , getHeight()/2f + (targetWidth/2f));
-        canvas.drawArc (indicator, -20f, 40f, true, paint);
-        // indicator Bottom
-        indicator.set(getWidth()/2f - (targetWidth/2f), getBottom() - (indicatorHeight*2)
-                , getWidth()/2f + (targetWidth/2f), getBottom() );
-        canvas.drawArc (indicator, 70f, 40f, true, paint);
-        // indicator Left
-        indicator.set(getLeft() , getHeight()/2f - (targetWidth/2f)
-                , getLeft() + (indicatorHeight*2), getHeight()/2f + (targetWidth/2f));
-        canvas.drawArc (indicator, 160f, 40f, true, paint);
+        canvas.save();
+        for (int i=1; i<=4; i++) {
+            canvas.drawArc (indicator, -70f, -40f, true, paint);
+            canvas.rotate(90f, getWidth()/2f, getHeight()/2f);
+        }
+        canvas.restore();
     }
 }

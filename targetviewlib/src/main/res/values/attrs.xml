@@ -3,12 +3,17 @@
     <declare-styleable name="TargetView">
         <attr name="rotateDuration" format="integer" />
         <!-- Width of the Target line -->
-        <attr name="targetWidth" format="integer" />
+        <attr name="targetWidth" format="float" />
         <attr name="targetColor" format="color"/>
         <attr name="targetMode" format="enum">
             <enum name="Target1" value="1"/>
             <enum name="Target2" value="2"/>
             <enum name="Target3" value="3"/>
+            <enum name="Target4" value="4"/>
+            <enum name="Target5" value="5"/>
+            <enum name="Target6" value="6"/>
+            <enum name="Target7" value="7"/>
+            <enum name="Target8" value="8"/>
         </attr>
         <attr name="withBackgroundEffect" format="boolean"/>
         <attr name="backgroundEffectColor" format="color"/>

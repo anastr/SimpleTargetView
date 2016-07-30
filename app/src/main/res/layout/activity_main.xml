@@ -21,13 +21,13 @@
 
         <com.github.anastr.targetviewlib.TargetView
             android:id="@+id/mTargetView"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center_horizontal"
             app:backgroundEffectColor="#aa3fff1e"
             app:backgroundEffectDuration="500"
             app:rotateDuration="2000"
-            app:targetColor="#6b75ff"
+            app:targetColor="#ff6b6b"
             app:targetMode="Target1"
             app:targetWidth="10"
             app:withBackgroundEffect="true">
@@ -68,49 +68,68 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"/>
 
-        <com.github.anastr.targetviewlib.TargetView
-            android:id="@+id/mTargetView2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
-            app:backgroundEffectColor="#aaff961e"
-            app:targetColor="#ff6b6b"
-            app:targetMode="Target2">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="Hello"/>
-
-        </com.github.anastr.targetviewlib.TargetView>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"/>
-
-        <com.github.anastr.targetviewlib.TargetView
-            android:id="@+id/mTargetView3"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
-            app:backgroundEffectColor="#edffff1f"
-            app:targetColor="#31ffc9"
-            app:targetWidth="120"
-            app:targetMode="Target3">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <Button
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:id="@+id/on_off_button"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="@drawable/button"
-                android:text="ON/OFF"
-                android:textSize="14dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"
+                android:id="@+id/button_targetColor" />
 
-        </com.github.anastr.targetviewlib.TargetView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_targetColor"
+                android:hint="targetColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"
+                android:id="@+id/button_targetWidth" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText_targetWidth"
+                android:hint="targetWidth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"
+                android:id="@+id/button_backgroundEffectColor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_backgroundEffectColor"
+                android:hint="backgroundEffectColor" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See All Targets"
+            android:id="@+id/button_allTargets" />
 
     </LinearLayout>
 

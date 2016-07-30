@@ -3,14 +3,32 @@ package com.github.anastr.targetviewlib;
 import android.content.Context;
 import android.view.View;
 
-public class Target extends View{
-    protected int color;
+public abstract class Target extends View{
+
+    /** Width of the Target line , in Pixel*/
     protected float targetWidth;
+    protected int targetColor;
 
     public Target(Context context, Builder builder) {
         super(context);
         this.targetWidth = builder.getTargetWidth();
-        this.color = builder.getColor();
+        this.targetColor = builder.getColor();
+    }
+
+    public void setTargetColor(int targetColor) {
+        this.targetColor = targetColor;
+    }
+
+    public void setTargetWidth(float targetWidth) {
+        this.targetWidth = targetWidth;
+    }
+
+    public float getTargetWidth() {
+        return targetWidth;
+    }
+
+    public int getTargetColor() {
+        return targetColor;
     }
 
     protected static class Builder {
