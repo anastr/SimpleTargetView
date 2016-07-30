@@ -1,14 +1,16 @@
-# SimpleTargetView
-Animation view to highlight a particular goals for Android
+# TargetView
+Animation View to Highlight a particular Views for Android, it can be Used with Views that you see important (Like CountDownTimer), And also be used to attract the user's attention to something interesting.
 
 <img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-2555049895.gif" width="250" height=250 />
 <img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-3734696272.gif" width="150" height=150 />
 <img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-4259888620.gif" width="150" height=150 />
 
 
+`minSdkVersion=11`
+
 # Usage
 
-**add this line to Gradle**
+**add this line to** `build.gradle`
 
 ```gradle
 
