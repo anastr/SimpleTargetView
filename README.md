@@ -66,7 +66,7 @@ if (mTargetView.isAnimationRunning() ){
 
 ```
 
-<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif1.gif" width="150" height=150 />
+<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif1.gif" width="250" height=250 />
 
 Another Methods
 
