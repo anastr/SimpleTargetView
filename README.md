@@ -1,12 +1,13 @@
 # TargetView
 Animation View to Highlight a particular Views for Android, it can be Used with Views that you see important (Like CountDownTimer), And also be used to attract the user's attention to something interesting.
 
-<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-2555049895.gif" width="250" height=250 />
-<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-3734696272.gif" width="150" height=150 />
-<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/ezgif-4259888620.gif" width="150" height=150 />
-
-
 `minSdkVersion=11`
+
+# Preview
+<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif0.gif" width="225" height=274 /><br/>
+<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif2.gif" width="150" height=150 />
+<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif3.gif" width="150" height=150 />
+
 
 # Usage
 
@@ -15,7 +16,7 @@ Animation View to Highlight a particular Views for Android, it can be Used with 
 ```gradle
 
 dependencies {
-	    compile 'com.github.anastr:targetviewlib:1.0.0'
+	    compile 'com.github.anastr:targetviewlib:1.0.2'
 }
 
 ```
@@ -45,6 +46,8 @@ dependencies {
 
 # Methods (code)
 
+start and stop Animation
+
 ```java
 
 // Animation starting by defoult
@@ -63,6 +66,22 @@ if (mTargetView.isAnimationRunning() ){
 
 ```
 
+<img src="https://github.com/anastr/SimpleTargetView/blob/master/images/gif1.gif" width="150" height=150 />
+
+Another Methods
+
+```java
+
+// Change target color
+mTargetView.setTargetColor(Color.parseColor(#aa009900));
+
+// Change target Width
+mTargetView.setTargetWidth(15);
+
+// Change Background Effect Color
+mTargetView.setBackgroundEffectColor(Color.RED);
+
+```
 
 # Attributes (in xml)
 
@@ -110,17 +129,42 @@ enum (Target1, Target2, Target3)
   <tr>
     <td>Target1</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/layout-2016-07-25-170346.png" width="250" height=170 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target1.png" width="320" height=200 /></td>
   </tr>
   <tr>
     <td>Target2</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/layout-2016-07-25-170333.png" width="250" height=170 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target2.png" width="320" height=200 /></td>
   </tr>
   <tr>
     <td>Target3</td>
     <td>set targetWidth="80" or more</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/layout-2016-07-27-095639.png" width="250" height=170 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target3.png" width="320" height=200 /></td>
+  </tr>
+  <tr>
+    <td>Target4</td>
+    <td>---</td> 
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target4.png" width="320" height=200 /></td>
+  </tr>
+  <tr>
+    <td>Target5</td>
+    <td>---</td> 
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target5.png" width="320" height=200 /></td>
+  </tr>
+  <tr>
+    <td>Target6</td>
+    <td>set targetWidth="10" or less</td> 
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target6.png" width="320" height=200 /></td>
+  </tr>
+  <tr>
+    <td>Target7</td>
+    <td>---</td> 
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target7.png" width="320" height=200 /></td>
+  </tr>
+  <tr>
+    <td>Target8</td>
+    <td>set targetWidth="15" or less</td> 
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target8.png" width="320" height=200 /></td>
   </tr>
 </table>
 
