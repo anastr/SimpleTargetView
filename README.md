@@ -129,42 +129,42 @@ enum (Target1, Target2, Target3)
   <tr>
     <td>Target1</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target1.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target1.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target2</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target2.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target2.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target3</td>
     <td>set targetWidth="80" or more</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target3.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target3.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target4</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target4.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target4.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target5</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target5.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target5.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target6</td>
     <td>set targetWidth="10" or less</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target6.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target6.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target7</td>
     <td>---</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target7.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target7.png" width="320" height=230 /></td>
   </tr>
   <tr>
     <td>Target8</td>
     <td>set targetWidth="15" or less</td> 
-    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target8.png" width="320" height=200 /></td>
+    <td><img src="https://github.com/anastr/SimpleTargetView/blob/master/images/Target8.png" width="320" height=230 /></td>
   </tr>
 </table>
 
