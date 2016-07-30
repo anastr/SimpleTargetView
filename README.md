@@ -1,5 +1,5 @@
 # TargetView
-Animation View to Highlight a particular Views for Android, it can be Used with Views that you see important (Like CountDownTimer), And also be used to attract the user's attention to something interesting.
+Animation View to Highlight particular Views for Android, it can be Used with Views that you see important (Like CountDownTimer), And also to attract the user's attention to something interesting.
 
 `minSdkVersion=11`
 
