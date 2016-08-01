@@ -6,9 +6,9 @@ Animation View to Highlight particular Views 🎯 for Android, it can be Used wi
 Size ~ **12 Kb**
 
 # Preview
-<img src="/images/gif0.gif" width="225" height=274 /><br/>
-<img src="/images/gif2.gif" width="150" height=150 />
-<img src="/images/gif3.gif" width="150" height=150 />
+<img src="/images/gif0.gif" width="36%" /><br/>
+<img src="/images/gif2.gif" width="18%" />
+<img src="/images/gif3.gif" width="18%" />
 
 
 # Usage
