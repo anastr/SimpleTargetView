@@ -118,6 +118,7 @@ defoult : true
 > app:backgroundEffectColor="#AA3fff1e"
 
 defoult : Color.CYAN
+
 It is advisable to use *alpha*
 
 
@@ -129,11 +130,13 @@ defoult : 500 milliSeconds
 > app:rotateSide="Left"
 
 defoult : Right.
+
 enum (Left, Right).
 
 > app:targetMode="Target1"
 
 defoult : Target1.
+
 enum (Target1, Target2, Target3, Target4, Target5, Target6, Target7, Target8).
 <table style="width:100%">
   <tr>
