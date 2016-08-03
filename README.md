@@ -20,7 +20,7 @@ Size ~ **12 Kb**
 ```gradle
 
 dependencies {
-	    compile 'com.github.anastr:targetviewlib:1.0.2'
+	    compile 'com.github.anastr:targetviewlib:1.0.3'
 }
 
 ```
@@ -87,6 +87,11 @@ mTargetView.setBackgroundEffectColor(Color.RED);
 
 ```
 
+# in New Version
+
+- you can change the point of rotation of the targetView (see last Attribute).
+- more save memory.
+
 # Attributes (in xml)
 
 > app:targetWidth="10"
@@ -121,9 +126,15 @@ It is advisable to use *alpha*
 defoult : 500 milliSeconds
 
 
+> app:rotateSide="Left"
+
+defoult : Right.
+enum (Left, Right).
+
 > app:targetMode="Target1"
 
-enum (Target1, Target2, Target3, Target4, Target5, Target6, Target7, Target8) 
+defoult : Target1.
+enum (Target1, Target2, Target3, Target4, Target5, Target6, Target7, Target8).
 <table style="width:100%">
   <tr>
     <th>targetMode</th>
