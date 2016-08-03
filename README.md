@@ -5,6 +5,8 @@ Animation View to Highlight particular Views 🎯 for Android, it can be Used wi
 
 Size ~ **12 Kb**
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SimpleTargetView-green.svg?style=true)](https://android-arsenal.com/details/1/4035)
+
 # Preview
 <img src="/images/gif0.gif" width="36%" /><br/>
 <img src="/images/gif2.gif" width="18%" />
