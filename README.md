@@ -39,7 +39,8 @@ dependencies {
         app:targetMode="Target1"
         app:withBackgroundEffect="true"
         app:backgroundEffectColor="#aa3fff1e"
-        app:backgroundEffectDuration="500">
+        app:backgroundEffectDuration="500"
+        app:rotateSide="Left">
            
            <!-- TODO  add your views here -->
            
