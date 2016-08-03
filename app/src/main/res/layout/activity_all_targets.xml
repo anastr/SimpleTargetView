@@ -27,7 +27,8 @@
                 app:backgroundEffectColor="#aa3fff1e"
                 app:targetColor="#6b75ff"
                 app:targetMode="Target1"
-                app:targetWidth="10" >
+                app:targetWidth="10"
+                app:rotateSide="Left">
 
                 <TextView
                     android:layout_width="wrap_content"

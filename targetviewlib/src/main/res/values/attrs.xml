@@ -15,6 +15,10 @@
             <enum name="Target7" value="7"/>
             <enum name="Target8" value="8"/>
         </attr>
+        <attr name="rotateSide" format="enum">
+            <enum name="Right" value="1"/>
+            <enum name="Left" value="-1"/>
+        </attr>
         <attr name="withBackgroundEffect" format="boolean"/>
         <attr name="backgroundEffectColor" format="color"/>
         <attr name="backgroundEffectDuration" format="integer"/>
